@@ -30,8 +30,11 @@ For release, run `$ yarn run build` to check Flow types, run Prettier over files
 
 ### Other scripts
 
-Run Flow to check type annotations: `$ yarn run flow`
-Run Prettier to auto-format `.js`, `.mjs`, and `.json` files: `$ yarn run prettier`
+Run Flow to check type annotations:   
+`$ yarn run flow`
+
+Run Prettier to auto-format `.js`, `.mjs`, and `.json` files:   
+`$ yarn run prettier`
 
 ## License
 
