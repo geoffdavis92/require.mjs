@@ -1,4 +1,4 @@
 import fs from "fs";
 
-const require = (filepath: string, encoding: string = "utf8"): Object =>
+const require = (filepath, encoding = "utf8") =>
 	JSON.parse(fs.readFileSync(filepath, { encoding }));
