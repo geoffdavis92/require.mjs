@@ -1,0 +1,45 @@
+{
+	"name": "@geoffdavis/require.mjs",
+	"version": "0.0.0",
+	"description":
+		"Require local JSON files in files utilizing the `.mjs` experimental module system",
+	"main": "index.mjs",
+	"repository": "https://github.com/geoffdavis92/require.mjs.git",
+	"author": "Geoff Davis <geoffdavis92+package+requiremjs@gmail.com>",
+	"license": "MIT",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-plugin-remove-comments": "^2.0.0",
+		"babel-plugin-transform-flow-strip-types": "^6.22.0",
+		"babel-preset-minify": "^0.2.0",
+		"flow-bin": "^0.54.1",
+		"jest": "^21.1.0",
+		"prettier": "^1.7.0"
+	},
+	"scripts": {
+		"build":
+			"yarn run flow && yarn run prettier && BABEL_ENV=production yarn run babel:base",
+		"babel:base": "./node_modules/.bin/babel ./index.mjs -o ./dist/index.mjs",
+		"babel": "BABEL_ENV=development yarn run babel:base",
+		"flow": "yarn run prettier && ./node_modules/.bin/flow",
+		"postinstall": "yarn run prettier",
+		"prettier": "./node_modules/.bin/prettier {.,**}/*.{js,mjs,json} --write"
+	},
+	"babel": {
+		"env": {
+			"production": {
+				"plugins": ["remove-comments", "transform-flow-strip-types"],
+				"presets": ["minify"]
+			},
+			"development": {
+				"plugins": ["transform-flow-strip-types"]
+			}
+		}
+	},
+	"jest": {},
+	"prettier": {
+		"parser": "flow",
+		"tabWidth": 2,
+		"useTabs": true
+	}
+}

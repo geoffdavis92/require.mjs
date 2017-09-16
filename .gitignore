@@ -1,0 +1,4 @@
+# require.mjs ignores... 
+.DS_Store 
+*log 
+node_modules/
