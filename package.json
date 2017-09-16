@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"description":
 		"Require local JSON files in files utilizing the `.mjs` experimental module system",
-	"main": "index.mjs",
+	"main": "./dist/index.mjs",
 	"repository": "https://github.com/geoffdavis92/require.mjs.git",
 	"author": "Geoff Davis <geoffdavis92+package+requiremjs@gmail.com>",
 	"license": "MIT",
