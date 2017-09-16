@@ -1,4 +1,5 @@
 # require.mjs ignores... 
 .DS_Store 
 *log 
-node_modules/
+node_modules/ 
+writeup.md
