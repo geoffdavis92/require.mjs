@@ -1,4 +1,4 @@
-// Add this line at the top of the module with other `import` statements. If you are already using the `fs` module, you do not need to include this line 
+// Add this line at the top of the module with other `import` statements. If you are already using the `fs` module, you do not need to include this line
 import fs from "fs";
 
 /**
