@@ -41,5 +41,8 @@
 		"parser": "flow",
 		"tabWidth": 2,
 		"useTabs": true
+	},
+	"dependencies": {
+		"callsites": "^2.0.0"
 	}
 }
